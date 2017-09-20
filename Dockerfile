@@ -4,7 +4,7 @@ MAINTAINER Karl Ma
 ENV REFRESHED_AT 2017-09-20
 
 # Change sourcelist to aliyun
-#COPY sources.list /etc/apt/
+COPY sources.list /etc/apt/
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \
