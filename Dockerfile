@@ -1,10 +1,10 @@
-FROM karlma/ubuntu-sshd
+FROM docker.flyudesk.com:9876/matiancai/ubuntu_sshd:18.04
 
 MAINTAINER Karl Ma
-ENV REFRESHED_AT 2017-09-20
+ENV REFRESHED_AT 2019-07-30
 
 # Change sourcelist to aliyun
-COPY sources.list /etc/apt/
+#COPY sources.list /etc/apt/
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \
