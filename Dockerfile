@@ -1,10 +1,10 @@
-FROM karlma/ubuntu-sshd
+FROM registry.cn-hangzhou.aliyuncs.com/udesk-cicd/ubuntu_sshd:16.04
 
 MAINTAINER Karl Ma
-ENV REFRESHED_AT 2017-09-20
+ENV REFRESHED_AT 2020-11-22
 
 # Change sourcelist to aliyun
-COPY sources.list /etc/apt/
+#COPY sources.list /etc/apt/
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \
