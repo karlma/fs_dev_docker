@@ -27,6 +27,8 @@ git clean -fdx
 
 * 编译fs
 
+> 编译时出现openssl 3.0兼容问题，pull request还未合并：https://github.com/signalwire/freeswitch/issues/1762
+
 ```bash
 ./bootstrap.sh && ./configure --enable-core-odbc-support && make all
 ```
