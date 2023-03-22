@@ -1,9 +1,8 @@
-FROM registry.cn-hangzhou.aliyuncs.com/udesk-cicd/ubuntu_sshd:18.04
+FROM karlma/ubuntu-sshd:22.04
 
 MAINTAINER Karl Ma
-ENV REFRESHED_AT 2020-11-23
+ENV REFRESHED_AT 2023-03-22
 
-# gcc for cgo
 RUN apt-get update && apt-get install -y \
 		autoconf \
 		make \
