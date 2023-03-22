@@ -1,4 +1,4 @@
-FROM karlma/ubuntu-sshd:22.04
+FROM karlma/ubuntu-sshd:20.04
 
 MAINTAINER Karl Ma
 ENV REFRESHED_AT 2023-03-22

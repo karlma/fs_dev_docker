@@ -3,7 +3,7 @@
 * build
 
 ```bash
-docker build --platform linux/x86_64 -t karlma/fs_dev-ubuntu:22.04 .
+docker build --platform linux/x86_64 -t karlma/fs_dev-ubuntu:20.04 .
 ```
 
 * Run and ssh login
