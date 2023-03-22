@@ -1,10 +1,7 @@
-FROM docker.flyudesk.com:9876/matiancai/ubuntu_sshd:18.04
+FROM registry.cn-hangzhou.aliyuncs.com/udesk-cicd/ubuntu_sshd:18.04
 
 MAINTAINER Karl Ma
-ENV REFRESHED_AT 2019-07-30
-
-# Change sourcelist to aliyun
-#COPY sources.list /etc/apt/
+ENV REFRESHED_AT 2020-11-23
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \
@@ -38,6 +35,9 @@ RUN apt-get update && apt-get install -y \
 		libmpg123-dev \
 		libmp3lame-dev \
 	    && rm -rf /var/lib/apt/lists/*
+# video
+        # ?libavformat-dev \
+        # libx264-dev \ # for compile ffmpeg
 
 VOLUME /usr/local/src/freeswitch
 VOLUME /usr/local/freeswitch
