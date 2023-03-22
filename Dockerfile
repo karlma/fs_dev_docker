@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
 		libtool-bin \
 		g++ \
 		unixodbc-dev \
+		libmariadb-dev \
 		zlib1g-dev \
 		libjpeg-dev \
 		libcurl4-openssl-dev \
@@ -33,6 +34,7 @@ RUN apt-get update && apt-get install -y \
 		libshout3-dev \
 		libmpg123-dev \
 		libmp3lame-dev \
+		libtiff-dev \
 	    && rm -rf /var/lib/apt/lists/*
 # video
         # ?libavformat-dev \
