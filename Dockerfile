@@ -35,6 +35,7 @@ RUN apt-get update && apt-get install -y \
 		libmpg123-dev \
 		libmp3lame-dev \
 		libtiff-dev \
+        python3-dev \
 	    && rm -rf /var/lib/apt/lists/*
 # video
         # ?libavformat-dev \
