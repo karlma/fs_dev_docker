@@ -1,7 +1,7 @@
 FROM registry.cn-hangzhou.aliyuncs.com/udesk-cicd/ubuntu_sshd:18.04
 
 MAINTAINER Karl Ma
-ENV REFRESHED_AT 2020-11-23
+ENV REFRESHED_AT 2023-09-15
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y \
@@ -34,6 +34,8 @@ RUN apt-get update && apt-get install -y \
 		libshout3-dev \
 		libmpg123-dev \
 		libmp3lame-dev \
+    python3-dev \
+    libtiff-dev \
 	    && rm -rf /var/lib/apt/lists/*
 # video
         # ?libavformat-dev \
